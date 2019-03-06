@@ -1,5 +1,5 @@
 ﻿import { h } from 'hyperapp';
-import Counter from './Counter';
+import Counter from './counter';
 
 export default (state, actions) =>
     <div>

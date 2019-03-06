@@ -10,7 +10,7 @@
     "buildprod": "webpack --config webpack.prod.js",
     "test": "jest --coverage",
     "testwatch": "jest --coverage --watchAll",
-    "lint": "eslint --max-warnings 5 ./*/*.js"
+    "lint": "eslint --max-warnings 5 ./src/*/*.js ./test/*/*.js"
   },
   "author": "andywilsonuk",
   "devDependencies": {
@@ -23,7 +23,7 @@
     "css-hot-loader": "1.4.2",
     "css-loader": "^1.0.1",
     "cssnano": "^4.1.7",
-    "eslint": "^5.9.0",
+    "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jest": "^22.1.0",
