@@ -1,4 +1,13 @@
-import actions from './../src/actions';
+import actions from '../../src/actions';
+
+test('Actions startup', () => {
+    const actions2 = {
+        add: jest.fn(),
+    };
+    actions.startup()(null, actions2);
+
+    expect(actions2.add).toHaveBeenCalledTimes(1);
+});
 
 test('Actions add', () => {
   const addResult = actions.add()({ num: 0 });

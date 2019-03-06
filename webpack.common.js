@@ -13,26 +13,26 @@ module.exports = {
     },
     module: {
         rules: [
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader',
-			},
-			{
-				test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-				loader: 'url-loader',
-				options: {
-					limit: 10000
-				}
-			}],
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+            },
+            {
+                test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 10000,
+                },
+            }],
     },
     plugins: [
-		new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: './app.[hash].css',
         }),
-		new HtmlWebpackPlugin({
-			template: './src/index.html'
-		}),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+        }),
     ],
 };

@@ -1,7 +1,7 @@
 import { app } from 'hyperapp';
 import actions from './actions';
 import state from './state';
-import view from './components/View';
+import view from './components/view';
 import './styles/app.css';
 
 let main = app(
@@ -15,7 +15,7 @@ main.startup();
 
 if (module.hot) {
     module.hot.accept([
-        './components/View.js',
+        './components/view.js',
         './actions',
         './styles/app.css',
     ], () => {
