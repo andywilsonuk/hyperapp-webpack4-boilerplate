@@ -5,10 +5,11 @@ const dev = require('./webpack.dev.js');
 
 const baseMerge = merge(dev, {
     devServer: {
-        contentBase: Path.join(__dirname, 'assets'),
         open: 'Chrome',
         hot: true,
         publicPath: '/',
+        contentBase: Path.join(__dirname, 'dist'),
+        port: 8080,
     },
 });
 

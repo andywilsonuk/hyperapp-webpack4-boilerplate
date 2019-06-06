@@ -14,6 +14,8 @@ module.exports = {
         'no-continue': 'off',
         'import/no-extraneous-dependencies': 'off',
         'unicode-bom': 'off',
+        'prefer-destructuring': 'off',
+        'max-len': ["error", { "code": 140 }]
     },
     parserOptions: {
         ecmaFeatures: {

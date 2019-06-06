@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-size: calc(10px + 2vmin);
-    background-image: url('/background-1879623_640.jpg');
+    background-image: url('/assets/background-1879623_640.jpg');
 }
 
 section {
